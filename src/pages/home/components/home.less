@@ -1,0 +1,213 @@
+.homePage{
+  width: 100%;
+
+  .banner{
+    width: 100%;
+    height: 480px;
+    background-image: url(./img/home/banner.jpg);
+    background-size: cover;
+    font-family:MicrosoftYaHei;
+    padding-left: 15%;
+    padding-top: 115px;
+    box-sizing: border-box;
+
+    p{
+      width: 355px;
+      font-size:40px;
+      color:#ffffff;
+      letter-spacing:2.5px;
+      margin-bottom:44px;
+    }
+    .content{
+      max-width: 600px;
+      font-size:16px;
+      color:#ffffff;
+      letter-spacing:1px;
+      line-height:32px;
+    }
+  }
+  .groups{
+    width: 100%;
+    padding:60px 15% 0;
+    box-sizing: border-box;
+    &:after{
+      content:'';
+      display: block;
+      clear: both;
+      height: 0;
+      visibility: hidden;
+    }
+    ul{
+      list-style: none;
+    }
+    li{
+      height: 155px;
+      width: 100%;
+      margin-bottom:50px;
+      .img{
+        height: 120px;
+        width: 120px;
+        margin-right:calc(~'25%' - 120px);
+        float: left;
+        background-size: cover;
+        line-height:155px;
+      }
+      &:first-child{
+        .img{background-image: url(./img/home/index-icon-1.png)}
+      }
+      &:nth-child(2){
+        .img{background-image: url(./img/home/index-icon-2.png)}
+      }
+      &:nth-child(3){
+        .img{background-image: url(./img/home/index-icon-3.png);}
+      }
+      .right{
+        width: 75%;
+        box-sizing: border-box;
+        float: left;
+        font-family:MicrosoftYaHei-Bold;
+        position: relative;
+
+        &:after{
+          position: absolute;
+          content:'';
+          height: 110px;
+          width: 1px;
+          background:#e1e1e1;
+          top:0;
+          left:-8%
+        }
+        p{
+          font-size:24px;
+          font-weight:bold;
+          color:#333;
+          letter-spacing:2px;
+        }
+        .content{
+          font-family:MicrosoftYaHei;
+          font-size:16px;
+          color:#333;
+          letter-spacing:0;
+          line-height:32px;
+          text-align:left;
+        }
+      }
+    }
+  }
+  .product{
+    background-image:linear-gradient(-180deg, #f7f8fa 0%, #ffffff 100%);
+    width:100%;
+    height:700px;
+    padding-bottom:50px;
+
+    .head{
+      height: 164px;
+      text-align: center;
+      font-family:MicrosoftYaHei;
+      padding-top:64px;
+      box-sizing: border-box;
+      p{
+        font-size:24px;
+        color:#333333;
+        letter-spacing:2px;
+        margin:0 0 16px;
+      }
+      .content{
+        font-size:16px;
+        color:#666666;
+        letter-spacing:1px;
+        text-align:center;
+      }
+
+    }
+    .warp{
+      width: 80%;
+      margin:0 auto;
+
+      .perProduct{
+        position: relative;
+        background:#ffffff;
+        border:1px solid #e1e1e1;
+        width:40%;
+        height:198px;
+        float: left;
+        margin-top:40px;
+        &:nth-of-type(even){
+          margin-left:10%;
+        }
+        .left{
+          float: left;
+          width: 35%;
+          height: 100%;
+          padding-top:65px;
+          box-sizing: border-box;
+          .img{
+            height: 50px;
+            width: 100%;
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+        }
+        &:nth-child(1){
+          .img{
+            background-image: url(./img/home/logo-index-1.png);
+          }
+        }
+        &:nth-child(2){
+          .img{
+            background-image: url(./img/home/logo-index-2.png);
+          }
+        }
+        &:nth-child(3){
+          .img{
+            background-image: url(./img/home/logo-index-3.png);
+          }
+        }
+        &:nth-child(4){
+          .img{
+            background-image: url(./img/home/logo-index-4.png);
+          }
+        }
+        .right{
+          float: left;
+          width: 65%;
+          font-family:MicrosoftYaHei;
+          p{
+            padding:24px 0 16px;
+            font-family:MicrosoftYaHei-Bold;
+            font-size:16px;
+            color:#333333;
+            letter-spacing:1px;
+            line-height:28px;
+          }
+          .content{
+            padding-right:10px;
+            font-size:14px;
+            color:#333333;
+            letter-spacing:1px;
+            line-height:28px;
+          }
+          .look{
+            position: absolute;
+            bottom:16px;
+            right:-19px;
+            background:#2352be;
+            width:100px;
+            height:40px;
+            font-size:14px;
+            color:#ffffff;
+            letter-spacing:0.88px;
+            text-align:center;
+            line-height: 40px;
+            cursor:pointer;
+            transition: all .4s;
+            &:hover{
+              background-color: #1d3a7d;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}
