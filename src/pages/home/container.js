@@ -1,6 +1,4 @@
-/**
- * Created by cg on 2017/9/1.
- */
+
 import React, { Component } from 'react';
 import Header from 'components/Header';
 import Bottom from 'components/Bottom';
