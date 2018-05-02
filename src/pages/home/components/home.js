@@ -109,11 +109,16 @@ export default class Home extends Component{
             <p>发展历程</p>
             <div className="content">DEVELOPMENT HISTORY</div>
           </div>
-          <div className="road">
-            <div className=''>
-
-            </div>
-          </div>
+          <ul className="road">
+            this.state.road.map((e)=>
+            <li className=''>
+              <div className="year"></div>
+              <div className="line"></div>
+              <div className="month"></div>
+              <p></p>
+            </li>
+          )
+          </ul>
         </div>
       </div>
     )
