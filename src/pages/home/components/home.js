@@ -20,6 +20,11 @@ export default class Home extends Component{
         {year: 2018, main: [{month: 5, content: "全球用户突破100万"}]
         },
       ],
+      prise:[{time:'2016～2018',content:'连续三年大数据联盟</br>数据采集领域排名第一'},
+        {time:'2016.05',content:'“云上贵州”大数据商业模式</br>大赛中荣获“云路奖”'},
+        {time:'2016.11',content:'荣获称号</br>“国家高新技术企业”'},
+        {time:'2017.02',content:'中国大数据</br>最佳行业实践案例'},
+        {time:'2017.03',content:'第一届大数据优秀案例评选</br>技术创新奖'},]
     }
   }
   render(){
@@ -110,14 +115,50 @@ export default class Home extends Component{
             <div className="content">DEVELOPMENT HISTORY</div>
           </div>
           <ul className="road">
-            this.state.road.map((e)=>
-            <li className=''>
-              <div className="year"></div>
-              <div className="line"></div>
-              <div className="month"></div>
-              <p></p>
-            </li>
-          )
+            {this.state.road.map((e,i)=>
+              <li className='' key={i}>
+                <div className="year">{e.year+'年'}</div>
+                {e.main.map((el,index)=>
+                  <div className={(e.main.length===1?'only':index===0?'first':'')+' month ' + (i===this.state.road.length-1?(index===e.main.length-1?'final':''):'')}
+                       key={index}><span>{el.month+'月'}</span><p>{el.content}</p></div>
+                )}
+
+              </li>
+            )}
+          </ul>
+          <div className="bg"></div>
+        </div>
+        <div className='prise'>
+          <div className="head">
+            <span>荣誉奖项</span>
+          </div>
+          <ul className="detail">
+            {this.state.prise.map((e,i)=>
+              <li key={i}>
+                <p>{e.time}</p>
+                <div className="content" dangerouslySetInnerHTML={{__html:e.content}}></div>
+                <div className="bg"></div>
+              </li>)}
+          </ul>
+          <div className="head">
+            <span>荣誉证书</span>
+          </div>
+          <ul className="certificate">
+            <li><div></div><p>中国大数据最佳行业实践案例</p></li>
+            <li><div></div><p>高新技术企业</p></li>
+            <li><div></div><p>深圳市高新技术企业</p></li>
+            <li><div></div><p>高新技术优秀产品</p></li>
+          </ul>
+        </div>
+        <div className='cooperation'>
+          <div className="head">
+            <p>合作客户</p>
+            <div className="content">优秀的合作伙伴是我们发展和壮大的基石，Skieer期待与您携手共赢</div>
+          </div>
+          <ul>
+            <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
           </ul>
         </div>
       </div>
