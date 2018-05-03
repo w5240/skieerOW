@@ -13,21 +13,23 @@ export default class Bottom extends React.Component {
   render() {
     return (
       <div className='bottom'>
-        <div className='company'>
-          <div className='logo'></div>
-          <p>Copyright © 2012  Skieer. </p>
-          <p>All Rights Reserved. 粤ICP备14092314号</p>
-        </div>
-        <div className="moreInfor">
-          <ul>
-            { this.state.menu.map((e,i)=>
-              <li key={i}>
-                <p>{e.name}</p>
-                {e.list.map((el,index)=> el.link?<a href={el.link} key={index} dangerouslySetInnerHTML={{__html:el.name}}></a>:
-                                                  <span key={index} dangerouslySetInnerHTML={{__html:el.name}}></span>)}
-              </li>
-            )}
-          </ul>
+        <div className="wrap">
+          <div className='company'>
+            <div className='logo'></div>
+            <p>Copyright © 2012  Skieer. </p>
+            <p>All Rights Reserved. 粤ICP备14092314号</p>
+          </div>
+          <div className="moreInfor">
+            <ul>
+              { this.state.menu.map((e,i)=>
+                <li key={i}>
+                  <p>{e.name}</p>
+                  {e.list.map((el,index)=> el.link?<a href={el.link} key={index} dangerouslySetInnerHTML={{__html:el.name}}></a>:
+                    <span key={index} dangerouslySetInnerHTML={{__html:el.name}}></span>)}
+                </li>
+              )}
+            </ul>
+          </div>
         </div>
       </div>
     )

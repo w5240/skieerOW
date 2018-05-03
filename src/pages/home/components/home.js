@@ -74,7 +74,7 @@ export default class Home extends Component{
                 <div className="content">
                   八爪鱼，全球领先的网页数据采集器，极简的采集体验，强大的采集功能，日均采集10亿数据无错漏。
                 </div>
-                <div className="look">查看 →</div>
+                <a className="look">查看 →</a>
               </div>
             </div>
             <div className='perProduct'>
@@ -84,7 +84,7 @@ export default class Home extends Component{
                 <div className="content">
                   2016年3月在美国洛杉矶上线，两年时间即取得英文市场领先的地位，深耕北美，欧州与日本等市场。
                 </div>
-                <div className="look">查看 →</div>
+                <a className="look">查看 →</a>
               </div>
             </div>
             <div className='perProduct'>
@@ -94,7 +94,7 @@ export default class Home extends Component{
                 <div className="content">
                   微图CEM，专注客户体验管理，聚合全网客户声音，深度情感意见分析，支持多个行业高准确度分析模型。
                 </div>
-                <div className="look">查看 →</div>
+                <a className="look">查看 →</a>
               </div>
             </div>
             <div className='perProduct'>
@@ -104,7 +104,7 @@ export default class Home extends Component{
                 <div className="content">
                   数多多， 领先的数据服务众包平台，一站式数据服务与交易，汇集数百家高质量数据服务商。
                 </div>
-                <div className="look">查看 →</div>
+                <a className="look">查看 →</a>
               </div>
             </div>
           </div>
@@ -114,6 +114,7 @@ export default class Home extends Component{
             <p>发展历程</p>
             <div className="content">DEVELOPMENT HISTORY</div>
           </div>
+          <div className="warp">
           <ul className="road">
             {this.state.road.map((e,i)=>
               <li className='' key={i}>
@@ -127,6 +128,7 @@ export default class Home extends Component{
             )}
           </ul>
           <div className="bg"></div>
+          </div>
         </div>
         <div className='prise'>
           <div className="head">
