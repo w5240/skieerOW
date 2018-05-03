@@ -1,0 +1,193 @@
+.project{
+  width: 100%;
+  .banner{
+    width: 100%;
+    height: 304px;
+    background-image: url(./img/project/banner-project.jpg);
+    background-size: cover;
+    font-family:MicrosoftYaHei;
+    padding-top: 60px;
+    box-sizing: border-box;
+
+    p{
+      color:#ffffff;
+      margin-bottom:44px;
+      font-size:24px;
+      letter-spacing:2px;
+      text-align:center;
+    }
+    .content{
+      margin: 0 auto;
+      max-width: 600px;
+      font-size:16px;
+      color:#ffffff;
+      letter-spacing:1px;
+      line-height:32px;
+      text-align:center;
+    }
+  }
+  .pro{
+    width: 80%;
+    margin:0 auto;
+    list-style: none;
+    padding-bottom:60px;
+    &:after{
+      content:'';
+      display: block;
+      clear: both;
+      height: 0;
+      visibility: hidden;
+    }
+    li{
+      float: left;
+      position: relative;
+      width: 40%;
+      background:#f3f3f3;
+      height:128px;
+      margin-right:5%;
+      border:1px solid #e1e1e1;
+      margin-top:70px;
+      transition: all .4s;
+      cursor: default;
+
+      .icon{
+        float: left;
+        width:80px;
+        height:128px;
+        padding-top:25px;
+        box-sizing: border-box;
+        span {
+          margin: 0 auto;
+          display: block;
+          height: 36px;
+          width: 36px;
+        }
+      }
+      .right{
+        float: left;
+        padding:14px 23px;
+        height: 128px;
+        box-sizing: border-box;
+        width: calc(~'100%' - 80px);
+        p{
+          float: left;
+          font-family:MicrosoftYaHei-Bold;
+          font-size:16px;
+          color:#333333;
+          letter-spacing:1px;
+          height: 20px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          font-weight: bold;
+        }
+        .content{
+          float: left;
+          margin-top:10px;
+          font-family:MicrosoftYaHei;
+          font-size:16px;
+          color:#666666;
+          letter-spacing:1px;
+          line-height:26px;
+          width: 100%;
+          height: 64px;
+        }
+      }
+      a{
+        opacity: 0;
+        position: absolute;
+        top:100%;
+        height: 30px;
+        width: 60px;
+        right:20px;
+        padding-top:15px;
+        font-family:MicrosoftYaHei;
+        font-size:14px;
+        color:#188aff;
+        letter-spacing:0.88px;
+        text-decoration: none;
+        transition: all .4s;
+        span{
+          transition: all .4s;
+        }
+        &:hover{
+          span{
+            margin-left:10px;
+          }
+        }
+      }
+      &:hover{
+        &:nth-child(1){
+          box-shadow:inset 0 0 0 1px #1a88ea;
+          a{
+            opacity: 1;
+          }
+        }
+        &:nth-child(2){
+          box-shadow:inset 0 0 0 1px #40479e;
+          a{
+            opacity: 1;
+          }
+        }
+        &:nth-child(3){
+          box-shadow:inset 0 0 0 1px #409e79;
+          a{
+            opacity: 1;
+          }
+        }
+        &:nth-child(4){
+          box-shadow:inset 0 0 0 1px #1a6dea;
+          a{
+            opacity: 1;
+          }
+        }
+        &:nth-child(5){
+          box-shadow:inset 0 0 0 1px #ffb940;
+          a{
+            opacity: 1;
+          }
+        }
+      }
+      &:nth-child(1){
+        .icon{
+          background-color: #1a88ea;
+          span{
+            background-image: url(./img/project/icon-project-1.png);
+          }
+        }
+      }
+      &:nth-child(2){
+        .icon{
+          background-color: #40479e;
+          span{
+            background-image: url(./img/project/icon-project-2.png);
+          }
+        }
+      }
+      &:nth-child(3){
+        .icon{
+          background-color: #409e79;
+          span{
+            background-image: url(./img/project/icon-project-3.png);
+          }
+        }
+      }
+      &:nth-child(4){
+        .icon{
+          background-color: #1a6dea;
+          span{
+            background-image: url(./img/project/icon-project-4.png);
+          }
+        }
+      }
+      &:nth-child(5){
+        .icon{
+          background-color: #ffb940;
+          span{
+            background-image: url(./img/project/icon-project-5.png);
+          }
+        }
+      }
+    }
+  }
+}
