@@ -6,54 +6,58 @@
   width:100%;
   box-sizing: border-box;
   height:64px;
-
-  .logo{
-    float: left;
-    height: 20px;
-    margin-top:22px;
-    width: 175px;
-    background-image: url("./logo-nav.png");
-  }
-  .nav {
-    float: right;
-    a {
-      position: relative;
+  .wrap{
+    width: 1170px;
+    margin: 0 auto;
+    .logo{
+      float: left;
+      height: 20px;
+      margin-top:22px;
+      width: 175px;
+      background-image: url("./logo-nav.png");
+    }
+    .nav {
       float: right;
-      box-sizing: border-box;
-      padding: 0 20px;
-      text-decoration: none;
+      a {
+        position: relative;
+        float: right;
+        box-sizing: border-box;
+        padding: 0 20px;
+        text-decoration: none;
+        margin-left:30px;
 
-      span {
-        line-height: 64px;
-        transition: color .4s;
-        font-size: 16px;
-        color: #ffffff;
-        letter-spacing: 1px;
-        text-align: left;
-        font-family: MicrosoftYaHei;
-      }
+        span {
+          line-height: 64px;
+          transition: color .4s;
+          font-size: 16px;
+          color: #ffffff;
+          letter-spacing: 1px;
+          text-align: left;
+          font-family: MicrosoftYaHei;
+        }
 
-      &:before{
-        position: absolute;
-        bottom:0;
-        right: 0;
-        content: '';
-        transition: width .4s;
-        height: 3px;
-        width: 0;
-        background-color: #188aff;
-      }
-    &:hover,&.active{
-      span {
-        color: #188aff;
-      }
-      &:before{
-        right:unset;
-        left:0;
-        width: 100%;
-        background-image:linear-gradient(-90deg, #004e9e 0%, #188aff 100%);
+        &:before {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          content: '';
+          transition: width .4s;
+          height: 3px;
+          width: 0;
+          background-color: #188aff;
+        }
+        &:hover, &.active {
+          span {
+            color: #188aff;
+          }
+          &:before {
+            right: unset;
+            left: 0;
+            width: 100%;
+            background-image: linear-gradient(-90deg, #004e9e 0%, #188aff 100%);
+          }
+        }
       }
     }
   }
-}
 }

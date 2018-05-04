@@ -1,6 +1,7 @@
 import React , {Component} from 'react';
 import './about.less'
 
+
 export default class About extends Component{
   render(){
     return(
@@ -17,7 +18,7 @@ export default class About extends Component{
             <div className="content">
               深圳视界信息技术有限公司2013年成立于深圳，是一家以技术为驱动、市场为导向的国家高新企业。两位联合创始人来自于全球顶级金融数据分析公司Morningstar，核心团队毕业于国防科技大学、南开大学、吉林大学等知名院校，在大数据采集和分析领域具有深厚的技术积累和运营经验。
             </div>
-            <a href="">加入我们 <span> → </span> </a>
+            <div className="join"><a href="http://www.bazhuayu.com/joinus" target="_blank">加入我们 <span> → </span> </a></div>
           </div>
         </div>
         <div className="banner">
