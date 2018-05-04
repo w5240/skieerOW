@@ -1,6 +1,7 @@
 import React from 'react';
 import './bottom.less';
 export default class Bottom extends React.Component {
+
   constructor(){
     super()
     this.state = {
