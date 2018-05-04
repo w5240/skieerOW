@@ -3,6 +3,9 @@ import './about.less'
 
 
 export default class About extends Component{
+  componentDidMount(){
+    document.querySelector('title').innerText = '关于我们 | 深圳视界信息技术有限公司'
+  }
   render(){
     return(
       <div className="about">

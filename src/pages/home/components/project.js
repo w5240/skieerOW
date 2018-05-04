@@ -2,6 +2,9 @@ import React , {Component} from 'react';
 import './project.less'
 
 export default class Project extends Component{
+  componentDidMount(){
+    document.querySelector('title').innerText = '大数据解决方案|深圳视界信息技术有限公司'
+  }
   render(){
     return(
       <div className="project">
@@ -15,17 +18,17 @@ export default class Project extends Component{
           <li>
             <div className="icon"><span></span></div>
             <div className='right'><p>微图CEM客户体验价值管理</p><div className="content">聚合全景反馈，挖掘行动指引，提升客户体验。</div></div>
-            <a href="">查看 <span> → </span> </a>
+            <a href="http://www.wetoo.io/" target="_blank">查看 <span> → </span> </a>
           </li>
           <li>
             <div className="icon"><span></span></div>
-            <div className='right'><p>企业大数据风控解决方案</p><div className="content">通过八爪鱼快速获取数据，提升产学研效果，理论与实践相结合，提高教学质量。</div></div>
+            <div className='right'><p>企业大数据风控解决方案</p><div className="content">全网多纬度超级企业档案库，助力税务，经侦，工商等领域的企业征信解决方案落地。</div></div>
             <a href="">查看 <span> → </span> </a>
           </li>
           <li>
             <div className="icon"><span></span></div>
             <div className='right'><p>教育行业</p><div className="content">通过八爪鱼快速获取数据，提升产学研效果，理论与实践相结合，提高教学质量。</div></div>
-            <a href="">查看 <span> → </span> </a>
+            <a href="http://www.bazhuayu.com/solution/education" target="_blank">查看 <span> → </span> </a>
           </li>
           <li>
             <div className="icon"><span></span></div>
@@ -35,7 +38,7 @@ export default class Project extends Component{
           <li>
             <div className="icon"><span></span></div>
             <div className='right'><p>税务行业</p><div className="content">深度挖掘互联网公开数据，助力税务大数据。</div></div>
-            <a href="">查看 <span> → </span> </a>
+            <a href="http://www.bazhuayu.com/solution/tax" target="_blank">查看 <span> → </span> </a>
           </li>
         </ul>
       </div>

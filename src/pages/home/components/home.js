@@ -27,6 +27,9 @@ export default class Home extends Component{
         {time:'2017.03',content:'第一届大数据优秀案例评选</br>技术创新奖'},]
     }
   }
+  componentDidMount(){
+    document.querySelector('title').innerText = '深圳视界信息技术有限公司官网'
+  }
   render(){
     return(
       <div className='homePage'>
@@ -84,7 +87,7 @@ export default class Home extends Component{
               <div className="right">
                 <p>Octoparse</p>
                 <div className="content">
-                  2016年3月在美国洛杉矶上线，两年时间即取得英文市场领先的地位，深耕北美，欧州与日本等市场。
+                  2016年3月在美国洛杉矶上线，两年时间即取得英文市场领先的地位，深耕北美，欧洲与日本等市场。
                 </div>
                 <a href="http://www.octoparse.com/" target="_blank" className="look">查看 →</a>
               </div>
@@ -125,7 +128,6 @@ export default class Home extends Component{
                     <div className={(e.main.length===1?'only':index===0?'first':'')+' month ' + (i===this.state.road.length-1?(index===e.main.length-1?'final':''):'')}
                          key={index}><span>{el.month+'月'}</span><p>{el.content}</p></div>
                   )}
-
                 </li>
               )}
             </ul>

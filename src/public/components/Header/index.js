@@ -7,8 +7,8 @@ export default class Header extends React.Component {
     return (
       <div className="header">
         <div className="wrap">
-          <div className="logo">
-          </div>
+          <a href="/home" className="logo">
+          </a>
           <div className='nav'>
             <Link to="/about" activeClassName="active">
               <span>关于我们</span>
