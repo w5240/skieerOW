@@ -5,10 +5,8 @@
  * @Last Modified time: 2018-04-12 17:37:36
  */
 'use strict';
-// const glob = require('glob');
 const webpack = require('webpack');
 const path = require('path');
-// const AssetsPlugin = require('assets-webpack-plugin');  //生成资源映射表插件  jsp.php后端渲染建议使用这个插件来动态加载js和css
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const htmlPagePluginConfig = require('./htmlpage.config');
 const entries = require('./entries');
