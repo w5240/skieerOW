@@ -25,8 +25,8 @@ export default class Bottom extends React.Component {
               { this.state.menu.map((e,i)=>
                 <li key={i}>
                   <p>{e.name}</p>
-                  {e.list.map((el,index)=> el.link?<a href={el.link} key={index} target={el.link.indexOf('http')!==-1?'_blank':''} dangerouslySetInnerHTML={{__html:el.name}}></a>:
-                    <span key={index} dangerouslySetInnerHTML={{__html:el.name}}></span>)}
+                  {e.list.map((el,index)=> el.link?<span key={index} ><a href={el.link} target={el.link.indexOf('http')!==-1?'_blank':''} dangerouslySetInnerHTML={{__html:el.name}}></a></span>:
+                    <span className="noHref" key={index} dangerouslySetInnerHTML={{__html:el.name}}></span>)}
                 </li>
               )}
             </ul>

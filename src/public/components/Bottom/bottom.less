@@ -47,23 +47,27 @@
           user-select: none;
           white-space: nowrap;
         }
-        a, span {
+        span {
           display: block;
           margin-top: 16px;
-          font-family: MicrosoftYaHei;
           font-size: 12px;
-          color: #acacac;
           letter-spacing: 0;
           text-align: left;
-          text-decoration: none;
-          transition: color .4s;
-          white-space: nowrap;
+          color: #acacac;
 
-          &:hover {
-            color: #fff;
+          a{
+            font-family: MicrosoftYaHei;
+            color: #acacac;
+            text-decoration: none;
+            transition: color .4s;
+            white-space: nowrap;
+
+            &:hover {
+              color: #fff;
+            }
           }
         }
-        span {
+        .noHref {
           cursor: default;
           &:hover {
             color: #acacac;
