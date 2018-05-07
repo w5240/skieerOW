@@ -6,7 +6,7 @@ const webpack = require('webpack')
 var serveIndex = require('serve-index');
 const webpackDevMiddleware = require('webpack-dev-middleware')
 const config = require('./webpack.dev.config')
-const port = process.argv.slice(2)[0] || 800 // npm start 3030  默认888
+const port = process.argv.slice(2)[0] || 801 // npm start 3030  默认888
 const publicPath = config.output.publicPath;
 const nodeProxy = proxy({
   target: 'http://123.57.16.246:10008',

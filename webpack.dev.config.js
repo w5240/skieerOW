@@ -4,7 +4,7 @@ const path = require('path');
 const config = require('./webpack.base.config');
 const OpenBrowserPlugin = require('open-browser-webpack-plugin');
 const LiveReloadPlugin = require('webpack-livereload-plugin')
-const port = process.argv.slice(2)[0] || 800 // npm start 3030  默认888
+const port = process.argv.slice(2)[0] || 801 // npm start 3030  默认888
 const devConfig = {
   devtool: '#eval-source-map',
   output: {
