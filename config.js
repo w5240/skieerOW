@@ -25,7 +25,6 @@ const axiosFactory = istance  => {
     //在发送请求之前做某件事
     // NProgress.start()
     if(authority.user){
-
       const data = authority.user;
       config.headers.Authorization = data.token_type + ' ' + data.access_token
     }
