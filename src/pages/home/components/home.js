@@ -8,10 +8,11 @@ export default class Home extends Component{
       road: [
         {year: 2014, main: [{month: 4, content: "获得挚金资本・智金创始人杨溢种子投资"}]},
         {year: 2015, main: [{month: 1, content: "获得上市公司“拓尔思”天使投资"},
-            {month: 10, content: "数据服务交易平台“数多多”上线"},
+            {month: 10, content: "数据服务众包平台“数多多”上线"},
             {month: 11, content: "获得深圳市高新技术企业认证"},]
         },
         {year: 2016, main: [{month: 3, content: "八爪鱼海外版“Octoparse”在洛杉矶上线"},
+            {month: 6, content: "获得“协同创新”Pre-A 投资"},
             {month: 12, content: "获得国家高新技术企业认证"},]
         },
         {year: 2017, main: [{month: 1, content: "获得“中信资本”A轮投资"},

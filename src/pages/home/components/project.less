@@ -39,7 +39,7 @@
       height: 0;
       visibility: hidden;
     }
-    li{
+    a{
       float: left;
       position: relative;
       width: 514px;
@@ -49,7 +49,7 @@
       border:1px solid #e1e1e1;
       margin-top:70px;
       transition: all .4s;
-      cursor: default;
+      cursor: pointer;
       &:nth-of-type(even){
         margin-right:0;
       }
@@ -95,7 +95,7 @@
           width: 100%;
         }
       }
-      a{
+      &>span{
         opacity: 0;
         position: absolute;
         top:100%;
@@ -121,31 +121,31 @@
       &:hover{
         &:nth-child(1){
           box-shadow:inset 0 0 0 1px #1a88ea;
-          a{
+          &>span{
             opacity: 1;
           }
         }
         &:nth-child(2){
           box-shadow:inset 0 0 0 1px #40479e;
-          a{
+          &>span{
             opacity: 1;
           }
         }
         &:nth-child(3){
           box-shadow:inset 0 0 0 1px #409e79;
-          a{
+          &>span{
             opacity: 1;
           }
         }
         &:nth-child(4){
           box-shadow:inset 0 0 0 1px #1a6dea;
-          a{
+          &>span{
             opacity: 1;
           }
         }
         &:nth-child(5){
           box-shadow:inset 0 0 0 1px #ffb940;
-          a{
+          &>span{
             opacity: 1;
           }
         }
