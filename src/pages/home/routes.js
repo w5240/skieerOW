@@ -12,13 +12,15 @@ const routes = [{
   component:Container,
   childRoutes:[{
     indexRoute:{
-      onEnter:({ params }, replace) => replace('/home')
+      // onEnter:({ params }, replace) => replace('/home')
     }
-  },{
-    path:'home',
-    name:'home',
-    component:Home
-  },{
+  },
+  //   {
+  //   path:'home',
+  //   name:'home',
+  //   component:Home
+  // },
+    {
     path:'project',
     name:'Project',
     component:Project

@@ -7,7 +7,7 @@ export default class Header extends React.Component {
     return (
       <div className="header">
         <div className="wrap">
-          <a href="/home" className="logo">
+          <a href="/" className="logo">
           </a>
           <div className='nav'>
             <Link to="/about" activeClassName="active">
@@ -16,7 +16,7 @@ export default class Header extends React.Component {
             <Link to="/project" activeClassName="active">
               <span>解决方案</span>
             </Link>
-            <Link to="/home" activeClassName="active">
+            <Link to="/" activeClassName="act" className={this.props.location.pathname === '/' ?'active':''}>
               <span>首页</span>
             </Link>
           </div>
