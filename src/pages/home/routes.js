@@ -14,13 +14,7 @@ const routes = [{
     indexRoute:{
       // onEnter:({ params }, replace) => replace('/home')
     }
-  },
-  //   {
-  //   path:'home',
-  //   name:'home',
-  //   component:Home
-  // },
-    {
+  },{
     path:'project',
     name:'Project',
     component:Project
@@ -28,9 +22,9 @@ const routes = [{
     path:'about',
     name:'About',
     component:About
+  },{
+    path:'*',
+    component:notFind,
   }]
-},{
-  path:'*',
-  component:notFind,
 }]
 export default routes;
