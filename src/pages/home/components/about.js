@@ -47,7 +47,10 @@ export default class About extends Component{
           <div className="content">
             <div className="left">
               <p>联系我们</p>
-              <div><span>电话：0755-26646350</span><span>客服QQ：148686415  470619317</span></div>
+              <div>
+                <span>电话：0755-26646350</span>
+                {/*<span>客服QQ：148686415  470619317</span>*/}
+              </div>
               <div>邮箱：sales@skieer.com</div>
               <div>地址：深圳市南山区科技园深南大道9966号威盛科技大厦318</div>
             </div>
