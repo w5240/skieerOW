@@ -1,5 +1,7 @@
 ## start-react-app 脚手架
 
+eddydev test
+
 ####目录结构说明
 ```
 +---bin                     辅助脚本
