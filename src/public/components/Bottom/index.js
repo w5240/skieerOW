@@ -12,7 +12,8 @@ export default class Bottom extends React.Component {
             {name:'邮箱：sales@skieer.com',link:/Android|webOS|iPhone|iPod|iPad|BlackBerry|Windows Phone/i.test(navigator.userAgent) ?'mailto:sales@skieer.com':'' },
             // {name:'客服QQ：148686415</br><span style="margin-left:37px;">61570666</span>',link:''}
             ]},
-        ]
+        ],
+      year:new Date().getFullYear(),
     }
   }
   render() {
@@ -22,8 +23,8 @@ export default class Bottom extends React.Component {
         <div className="wrap">
           <div className='company'>
             <div className='logo'></div>
-            <p>Copyright © 2012  Skieer. </p>
-            <p>All Rights Reserved. 粤ICP备14092314号</p>
+            <p>{`Copyright © ${this.state.year} Skieer.`} </p>
+            <p>All Rights Reserved. 粤ICP备14092314号-3</p>
           </div>
           <div className="moreInfor">
             <ul>
