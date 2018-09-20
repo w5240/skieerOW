@@ -11,13 +11,13 @@ export default class Project extends Component{
         <div className="banner">
           <p>解决方案</p>
           <div className="content">
-            依托八爪鱼、微图、数多多等大数据及人工智能产品，为各行业打造大数据场景整体解决方案，使企业能高效、便捷地进行数据运用和价值实现。
+            依托八爪鱼、云听、数多多等大数据及人工智能产品，为各行业打造大数据场景整体解决方案，使企业能高效、便捷地进行数据运用和价值实现。
           </div>
         </div>
         <ul className="pro">
-          <a href="http://www.wetoo.io/" target="_blank">
+          <a href="http://www.yunting.ai/" target="_blank">
             <div className="icon"><span></span></div>
-            <div className='right'><p>微图CEM客户体验价值管理</p><div className="content">聚合全景反馈，挖掘行动指引，提升客户体验。</div></div>
+            <div className='right'><p>云听CEM客户体验价值管理</p><div className="content">聚合全景反馈，挖掘行动指引，提升客户体验。</div></div>
             <span >查看 <span> → </span> </span>
           </a>
           <a href="">

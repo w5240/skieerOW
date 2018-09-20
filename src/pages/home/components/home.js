@@ -16,7 +16,7 @@ export default class Home extends Component{
             {month: 12, content: "获得国家高新技术企业认证"},]
         },
         {year: 2017, main: [{month: 1, content: "获得“中信资本”A轮投资"},
-            {month: 12, content: "微图CEM客户体验管理平台上线"},]
+            {month: 12, content: "云听CEM客户体验管理平台上线"},]
         },
         {year: 2018, main: [{month: 5, content: "全球用户突破100万"}]
         },
@@ -96,11 +96,11 @@ export default class Home extends Component{
             <div className='perProduct'>
               <div className="left"><div className="img"></div></div>
               <div className="right">
-                <p>微图CEM</p>
+                <p>云听CEM</p>
                 <div className="content">
-                  微图CEM，专注客户体验管理，聚合全网客户声音，深度情感意见分析，支持多个行业高准确度分析模型。
+                  云听CEM，专注客户体验管理，聚合全网客户声音，深度情感意见分析，支持多个行业高准确度分析模型。
                 </div>
-                <a href="http://www.wetoo.io/" target="_blank" className="look">查看 →</a>
+                <a href="http://www.yunting.ai/" target="_blank" className="look">查看 →</a>
               </div>
             </div>
             <div className='perProduct'>
