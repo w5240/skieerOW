@@ -1,5 +1,8 @@
 ## start-react-app 脚手架
 
+目前服务器目录为：index.html  dist    ,dist里放css，js等
+下次提交前可改为 index.html 与css js 同级存放  ， 方便打包.
+
 ####目录结构说明
 ```
 +---bin                     辅助脚本

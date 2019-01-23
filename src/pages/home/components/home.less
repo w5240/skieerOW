@@ -135,19 +135,21 @@
         position: relative;
         background:#ffffff;
         border:1px solid #e1e1e1;
-        width:468px;
-        height:200px;
+        width:310px;
+        height: 410px;
         float: left;
         margin-top:40px;
-        //margin-left:40px;
-        &:nth-of-type(even){
-          margin-left:80px;
+        margin-right:40px;
+        text-align: center;
+        &:last-child{
+          margin-right:0
         }
         .left{
-          float: left;
+          //float: left;
           width: 184px;
-          height: 100%;
-          padding-top:65px;
+          height: 80px;
+          margin-top: 26px;
+          display: inline-block;
           box-sizing: border-box;
           .img{
             height: 100px;
@@ -177,37 +179,37 @@
           }
         }
         .right{
-          float: left;
-          width: 284px;
+          //float: left;
           font-family:MicrosoftYaHei;
+          padding: 0 22px;
           p{
             padding:24px 0 16px;
             font-family:MicrosoftYaHei-Bold;
-            font-size:16px;
+            font-size:18px;
             color:#333333;
             letter-spacing:1px;
             line-height:28px;
           }
           .content{
-            padding-right:20px;
-            font-size:14px;
+            font-size:16px;
             color:#333333;
             letter-spacing:1px;
             line-height:28px;
           }
           .look{
             position: absolute;
-            bottom:16px;
-            right:-19px;
-            background:#2352be;
-            width:100px;
-            height:40px;
-            font-size:14px;
-            color:#ffffff;
-            letter-spacing:0.88px;
-            text-align:center;
+            bottom: 36px;
+            left: 50%;
+            transform: translateX(-50px);
+            background: #2352be;
+            width: 100px;
+            height: 40px;
+            font-size: 14px;
+            color: #ffffff;
+            letter-spacing: 0.88px;
+            text-align: center;
             line-height: 40px;
-            cursor:pointer;
+            cursor: pointer;
             transition: all .4s;
             text-decoration: none;
             &:hover{

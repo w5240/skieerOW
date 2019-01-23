@@ -8,7 +8,7 @@ const proConfig = {
   output: {
     filename: 'js/[name].[hash].js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/dist/'
+    publicPath: '/'
   },
   plugins: [
     new webpack.DefinePlugin({
